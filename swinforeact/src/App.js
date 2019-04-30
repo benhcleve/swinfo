@@ -7,11 +7,13 @@ import DashPeople from "./components/layout/DashPeople";
 import DashPlanets from "./components/layout/DashPlanets";
 import DashSpecies from "./components/layout/DashSpecies";
 
+import Background from "../src/components/Images/Background.png";
+
 class App extends React.Component {
   render() {
     return (
       <Router>
-        <div className="App">
+        <div className="App" style={{ background: `url(${Background})` }}>
           <Navbar />
           <div className="container">
             <Switch>
