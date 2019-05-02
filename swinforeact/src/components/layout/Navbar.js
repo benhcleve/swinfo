@@ -5,7 +5,7 @@ export default class Navbar extends Component {
     return (
       <div>
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-          <a className="navbar-brand" href="/home">
+          <a className="navbar-brand" href="/">
             Star Wars Info
           </a>
           <button
@@ -34,6 +34,21 @@ export default class Navbar extends Component {
               <li className="nav-item">
                 <a className="nav-link" href="/species">
                   Species <span className="sr-only">(current)</span>
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="/films">
+                  Films <span className="sr-only">(current)</span>
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="/starships">
+                  Starships <span className="sr-only">(current)</span>
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="/vehicles">
+                  Vehicles <span className="sr-only">(current)</span>
                 </a>
               </li>
             </ul>

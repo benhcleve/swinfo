@@ -8,6 +8,7 @@ import DashPlanets from "./components/layout/DashPlanets";
 import DashSpecies from "./components/layout/DashSpecies";
 
 import Background from "../src/components/Images/Background.png";
+import "./App.css"
 
 class App extends React.Component {
   render() {
@@ -17,7 +18,7 @@ class App extends React.Component {
           <Navbar />
           <div className="container">
             <Switch>
-              <Route exact path="/home" component={DashHome} />
+              <Route exact path="/" component={DashHome} />
               <Route exact path="/people" component={DashPeople} />
               <Route exact path="/planets" component={DashPlanets} />
               <Route exact path="/species" component={DashSpecies} />

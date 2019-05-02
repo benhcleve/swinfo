@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
-import "../../App.css";
-import CardHome from "./CardHome";
+import "../../App";
+import CardHome from "../layout/cards/CardHome";
 import LukeImg from "../Images/LukeImg.jpeg";
 import Tattooine from "../Images/Tattooine.jpeg";
 import Twilek from "../Images/Twilek.jpg";
@@ -14,13 +14,16 @@ export default class DashHome extends Component {
     return (
       <div className="d-flex justify-content-center">
         <div className="row">
-          <CardHome name="People" imageUrl={LukeImg} />
-          <CardHome name="Species" imageUrl={Twilek} />
-          <CardHome name="Films" imageUrl={ReturnoftheJedi} />
-
-          <CardHome name="Planets" imageUrl={Tattooine} />
-          <CardHome name="Vehicles" imageUrl={ATAT} />
-          <CardHome name="Starships" imageUrl={MilFalcon} />
+          <CardHome name="People" imageUrl={LukeImg} linkUrl="/people" />
+          <CardHome name="Species" imageUrl={Twilek} linkUrl="/species" />
+          <CardHome name="Films" imageUrl={ReturnoftheJedi} linkUrl="/films" />
+          <CardHome name="Planets" imageUrl={Tattooine} linkUrl="/planets" />
+          <CardHome name="Vehicles" imageUrl={ATAT} linkUrl="/vehicles" />
+          <CardHome
+            name="Starships"
+            imageUrl={MilFalcon}
+            linkUrl="/starships"
+          />
         </div>
       </div>
     );
